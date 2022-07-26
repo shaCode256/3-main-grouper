@@ -22,8 +22,10 @@ it's already populated with the required list of 15 words.
 
 It'll print to the screen, as asked, the 3 main groups that can be found in the list.
 
+Another option is to run this Python program through bash/ cmd:
+
 ```bash
-main_grouper.py
+python main_grouper.py
 ```
 
 ## Usage
