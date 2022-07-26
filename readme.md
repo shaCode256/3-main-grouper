@@ -17,7 +17,9 @@ import editdistance
 ## Running instructions
 
 download the code from this repository, open the main_grouper.py file in PyCharm, install the required libs and then run it.
+
 it's already populated with the required list of 15 words. 
+
 It'll print to the screen, as asked, the 3 main groups that can be found in the list.
 
 ```bash
