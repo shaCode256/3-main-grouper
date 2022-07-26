@@ -57,9 +57,9 @@ words = ['BRAZEMAX ESTATYS, LTD',
 
 The program performs cleaning on the data of names, e.g removing all chars which are not alphanumeric | space.
 
-Computes an edit distance matrix for the word list, by calaulating pairwise Levenshtein Distance between names.
+Computes an edit distance matrix for the processed word list, by calaulating pairwise Levenshtein Distance between names.
 
-It uses scipy.K-means clustering on the distance matrix. 
+It uses K-means clustering on the distance matrix. 
 
 It caches the 3-largest-groups by the clustering.
 
