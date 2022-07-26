@@ -44,10 +44,10 @@ input_strings = ['BRAZEMAX ESTATYS, LTD',
          'Gramkat Estates, Inc.'
          ]
 
-#to check runtime on 1000 names
+# to check runtime on 1000 names
 # with open('1000_names.txt') as file:
-#      words = file.readlines()
-#      words = [line.rstrip() for line in words]
+#      input_strings = file.readlines()
+#      input_strings= [line.rstrip() for line in input_strings]
 
 #dealing with invalid input
 if len(input_strings)< 5:
@@ -67,7 +67,7 @@ distance_matrix = np.array([
 results_list = []
 
 #to repeat the k means and caching results process 10 times
-for i in range(10):
+for i in range(20):
     centroids, _ = kmeans(distance_matrix, k_or_guess=5)
     string_clusters = np.argmin([
         [spatial.distance.euclidean(wv, cv) for cv in centroids]
@@ -76,8 +76,8 @@ for i in range(10):
 
     top_3_labels = k_most_freq_num(string_clusters, 3) #find the k most common clustring labels]
     for label in top_3_labels:
-        results_list.append([string for i, string in enumerate(input_strings) if string_clusters[i] == label]) #append the 3 biggest lists
+        results_list.append([string for i, string in enumerate(input_strings) if string_clusters[i] == label]) #append the words list in that label
 
-most = Counter(tuple(i) for i in results_list).most_common(3) #take the most common 3 biggest lists
+most = Counter(tuple(i) for i in results_list).most_common(3) #take the 3 most common biggest lists
 for i in range(3):
    print(list(most[i][0]))
