@@ -64,7 +64,7 @@ It uses scipy.K-means clustering on the distance matrix.
 
 It caches the 3-largest-groups by the clustering.
 
-It repeats the clustering and caching process 20 times, and picks the most common results, which is our desired one, as seen.
+It repeats the clustering and caching process 20 times, and picks the most common results, which is our desired one, as seen in the example above.
 
 
 ## Contributing
