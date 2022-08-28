@@ -1,4 +1,4 @@
-# 3-main-grouper
+# Strings Similiarity Grouper
 
 main-grouper.py is a Python program for grouping: finding the 3 main groups of names (strings) in a list, by similiarity
 ## Prerequisites
